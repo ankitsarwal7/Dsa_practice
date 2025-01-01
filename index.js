@@ -44,6 +44,10 @@
 //     return this.lenght;
 // }
 
+// get(index) {
+//     return this.data[index]
+// }
+
 // }
 
 
@@ -53,8 +57,13 @@
 // myNewArray.Push('mango');
 
 
-// console.log(myNewArray);
+
+// // console.log(myNewArray);
+// console.log(myNewArray.get(1));
+
  
+
+//---------------------------------------------------------------------------------
 
 
 
