@@ -21,3 +21,42 @@
  
 // }
 // findstudent(StudentName, 'alex')
+
+
+
+//-------------------------------------------------------------------------------------------
+
+
+// 2 => Custom Array Class Implementation
+
+ 
+
+// class myArray {
+//     constructor() {
+//         this.lenght = 0,
+//         this.data = {}
+//     }
+
+
+// Push(item) {
+//     this.data[this.lenght] = item;
+//     this.lenght++;
+//     return this.lenght;
+// }
+
+// }
+
+
+// const myNewArray = new myArray();
+// myNewArray.Push('apple');
+// myNewArray.Push('banana');
+// myNewArray.Push('mango');
+
+
+// console.log(myNewArray);
+ 
+
+
+
+
+
