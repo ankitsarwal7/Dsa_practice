@@ -48,6 +48,18 @@
 //     return this.data[index]
 // }
 
+// pop() {
+//   const lastItme = this.data[this.lenght - 1]
+
+//   delete this.data[this.lenght - 1]
+
+//   this.lenght--;
+
+//   return lastItme;
+
+
+//  }
+
 // }
 
 
@@ -55,12 +67,13 @@
 // myNewArray.Push('apple');
 // myNewArray.Push('banana');
 // myNewArray.Push('mango');
+// myNewArray.pop();
 
 
 
-// // console.log(myNewArray);
+// console.log(myNewArray);
 // console.log(myNewArray.get(1));
-
+ 
  
 
 //---------------------------------------------------------------------------------
