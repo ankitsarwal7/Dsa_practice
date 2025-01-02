@@ -119,5 +119,18 @@ myNewArray.Push('guavava');
 
 
 
+// 3 => reverse string
 
 
+const reverseStr = (str) =>  str.split("").reverse("").join('')
+// console.log(reverseStr("hello"));
+// console.log(reverseStr("ankit"));
+
+
+
+//-------------------------------------------------------------------------
+
+//  4 => palindrome 
+
+const palindrome = (str) => str.split('').reverse('').join('') === str
+console.log(palindrome('abba'));
