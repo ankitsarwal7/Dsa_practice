@@ -7,19 +7,19 @@
 
 
  
-// const StudentName = ['ankit', 'amit', 'sumit', 'rohit']
+const StudentName = ['ankit', 'amit', 'sumit', 'rohit']
 
-// function findstudent (allStudent, studentName) {
-//      for(let i= 0; i < allStudent.length; i++) {
-//         if( allStudent[i] === studentName) {
-//             console.log(` found ${studentName}`)
-//         }
-//         else (!studentName)
-//         console.log("name not found ");
+function findstudent (allStudent, studentName) {
+     for(let i= 0; i < allStudent.length; i++) {
+        if( allStudent[i] === studentName) {
+            console.log(` found ${studentName}`)
+        }
+        else (!studentName)
+        // console.log("name not found ");
         
-//      }
+     }
  
-// }
+}
 // findstudent(StudentName, 'alex')
 
 
@@ -68,14 +68,10 @@ pop() {
     }
     delete this.data[this.lenght -1]
     this.lenght--
-    return firstitem
-
-
+    return firstitem;
+ 
  }
-
-
-
-
+ 
 }
 
 
@@ -88,14 +84,10 @@ myNewArray.Push('guavava');
 
 
 
-console.log(myNewArray);
-console.log(myNewArray.shift());
-console.log(myNewArray);
-
-
-
-
-
+// console.log(myNewArray);
+// console.log(myNewArray.shift());
+// console.log(myNewArray);
+ 
 
 // console.log(myNewArray.get(1));
 
