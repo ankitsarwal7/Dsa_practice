@@ -71,7 +71,24 @@ pop() {
     return firstitem;
  
  }
- 
+   // delete by index
+   delete(index) {
+      const item = this.data[index]
+
+    for (let i = 0; i < this.lenght ; i++) {
+         this.data[i]= this.data[i+1]        
+    }
+
+    delete this.data[this.lenght - 1]
+    this.lenght--
+    return item;
+
+   }
+
+
+
+
+
 }
 
 
@@ -90,6 +107,10 @@ myNewArray.Push('guavava');
  
 
 // console.log(myNewArray.get(1));
+
+// console.log(myNewArray.delete(1));
+
+// console.log(myNewArray, );
 
  
  
