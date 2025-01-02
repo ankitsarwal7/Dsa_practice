@@ -133,4 +133,15 @@ const reverseStr = (str) =>  str.split("").reverse("").join('')
 //  4 => palindrome 
 
 const palindrome = (str) => str.split('').reverse('').join('') === str
-console.log(palindrome('abba'));
+// console.log(palindrome('abba'));
+
+
+//-------------------------------------------------------------------------
+
+//  5 => reverse int 
+
+const reverseInt = n => {
+    const reversed = n.toString().split('').reverse('').join('')
+     return parseInt(reversed) * Math.sign(n)
+}
+// console.log(reverseInt(4321));
