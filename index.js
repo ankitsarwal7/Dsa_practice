@@ -145,3 +145,16 @@ const reverseInt = n => {
      return parseInt(reversed) * Math.sign(n)
 }
 // console.log(reverseInt(4321));
+
+
+ //-------------------------------------------------------------------------
+
+//  6 => capitilize string
+
+function capitilize(str) {
+    if(!str){
+        return str(" ")
+    }
+    return str[0].toUpperCase() + str.slice(1)
+}
+// console.log(capitilize("jordan"));
