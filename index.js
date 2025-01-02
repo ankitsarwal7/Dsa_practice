@@ -31,48 +31,74 @@
 
  
 
-// class myArray {
-//     constructor() {
-//         this.lenght = 0,
-//         this.data = {}
-//     }
+class myArray {
+    constructor() {
+        this.lenght = 0,
+        this.data = {}
+    }
 
 
-// Push(item) {
-//     this.data[this.lenght] = item;
-//     this.lenght++;
-//     return this.lenght;
-// }
+Push(item) {
+    this.data[this.lenght] = item;
+    this.lenght++;
+    return this.lenght;
+}
 
-// get(index) {
-//     return this.data[index]
-// }
+get(index) {
+    return this.data[index]
+}
 
-// pop() {
-//   const lastItme = this.data[this.lenght - 1]
+pop() {
+  const lastItme = this.data[this.lenght - 1]
 
-//   delete this.data[this.lenght - 1]
+  delete this.data[this.lenght - 1]
 
-//   this.lenght--;
+  this.lenght--;
 
-//   return lastItme;
-
-
-//  }
-
-// }
+  return lastItme;
 
 
-// const myNewArray = new myArray();
-// myNewArray.Push('apple');
-// myNewArray.Push('banana');
-// myNewArray.Push('mango');
+ }
+
+ shift(){
+    const firstitem = this.data[0]
+
+   for (let i = 0; i < this.data.lenght; i++) {
+        this.data[i] = this.data[i+1]
+    }
+    delete this.data[this.lenght -1]
+    this.lenght--
+    return firstitem
+
+
+ }
+
+
+
+
+}
+
+
+const myNewArray = new myArray();
+myNewArray.Push('apple');
+myNewArray.Push('banana');
+myNewArray.Push('mango');
+myNewArray.Push('guavava');
 // myNewArray.pop();
 
 
 
-// console.log(myNewArray);
+console.log(myNewArray);
+console.log(myNewArray.shift());
+console.log(myNewArray);
+
+
+
+
+
+
 // console.log(myNewArray.get(1));
+
  
  
 
