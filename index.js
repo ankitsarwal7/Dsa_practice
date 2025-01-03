@@ -208,3 +208,38 @@ return maxProfit;
 
 const prices = [7, 1, 5, 3, 6, 4];
 // console.log(maxProfit(prices));
+
+
+
+
+ //-------------------------------------------------------------------------
+
+ //  8 =>  chunk 
+
+
+
+ function chunkArray(array, chunkSize) {
+    const chunks = []; // Step 1: Create an empty array to hold the chunks
+    let index = 0; // Step 2: Set a starting index
+
+    // Step 3: Loop through the original array as long as the index hasn't reached the end
+    while (index < array.length) {
+        // Step 4: Extract a chunk of the desired size
+        const chunk = array.slice(index, index + chunkSize);
+
+        // Step 5: Add the extracted chunk to the `chunks` array
+        chunks.push(chunk);
+
+        // Step 6: Move the index forward by the chunk size
+        index += chunkSize;
+    }
+
+    // Step 7: Return the final array of chunks
+    return chunks;
+}
+
+// Example usage:
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+const size = 3;
+console.log(chunkArray(arr, size)); 
+// Output: [[1, 2, 3], [4, 5, 6], [7, 8]]
