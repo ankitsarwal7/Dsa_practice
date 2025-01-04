@@ -216,8 +216,7 @@ const prices = [7, 1, 5, 3, 6, 4];
 
  //  8 =>  chunk 
 
-
-
+ 
  function chunkArray(array, chunkSize) {
     const chunks = []; // Step 1: Create an empty array to hold the chunks
     let index = 0; // Step 2: Set a starting index
@@ -240,6 +239,6 @@ const prices = [7, 1, 5, 3, 6, 4];
 
 // Example usage:
 const arr = [1, 2, 3, 4, 5, 6, 7, 8];
-const size = 3;
+const size = 4;
 console.log(chunkArray(arr, size)); 
-// Output: [[1, 2, 3], [4, 5, 6], [7, 8]]
+ 
